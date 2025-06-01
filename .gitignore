@@ -1,3 +1,5 @@
 /venv
 /venv2
 /__pycache__
+/k6-html-reporter
+

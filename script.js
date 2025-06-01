@@ -7,13 +7,13 @@ export const options = {
   scenarios: {
     ramp_up_sessions: {
       executor: 'ramping-arrival-rate',
-      startRate: 2,
+      startRate: 1,
       timeUnit: '1s',
-      preAllocatedVUs: 300,
-      maxVUs: 300,
+      preAllocatedVUs: 500,
+      maxVUs: 500,
       gracefulStop: '180s',
       stages: [
-        { target: 2, duration: '150s' },
+        { target: 1, duration: '500s' },
         { target: 0, duration: '1s' },
       ],
     },

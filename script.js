@@ -9,20 +9,20 @@ export const options = {
       executor: 'ramping-arrival-rate',
       startRate: 2,
       timeUnit: '1s',
-      preAllocatedVUs: 200,
-      maxVUs: 200,
+      preAllocatedVUs: 300,
+      maxVUs: 300,
       gracefulStop: '180s',
       stages: [
-        { target: 2, duration: '100s' },
+        { target: 2, duration: '150s' },
         { target: 0, duration: '1s' },
       ],
     },
   },
 };
 
-const API_BASE_URL = "https://api-stream.engagexai.io";
+const API_BASE_URL = "https://api.engagexai.io";
 const AUTH_TOKEN = "21de7e46e6861f7671a8af3b9a2e74a84fdac780";
-const CHUNKS_TO_SEND = 10;
+const CHUNKS_TO_SEND = 7;
 const CHUNK_INTERVAL = 9;
 
 const videoChunk = open('test.webm', 'b');
